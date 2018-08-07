@@ -6,6 +6,7 @@ public class SayHelloClient {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[] { "dubbo-client.xml" });
+
         context.start();
 
        SayHello hello = (SayHello)context.getBean("sayHelloImpl");
