@@ -5,7 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SayHelloImpl2 implements SayHello {
     @Override
     public String sayHello(String name) {
-
         return "hello version 2.0.0"+name;
     }
 
